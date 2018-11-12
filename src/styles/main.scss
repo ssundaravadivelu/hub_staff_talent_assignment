@@ -1,0 +1,68 @@
+
+.logo {
+    width: 120px;
+    height: 31px;
+    background: rgba(255,255,255,.2);
+    margin: 16px 24px 16px 0;
+    float: left;
+  }
+
+  .ant-layout-header {
+    background-color: #fff !important;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,1,0.2) !important;
+    box-shadow: 0 2px 4px rgba(0,0,1,0.2) !important;
+    font-size: 13px !important;
+    width: 100% !important;
+    top: 0 !important;
+}
+
+.ant-menu-item{
+  color: rgba(0, 0, 0, 0.65) !important;
+  font-size: 13px;
+  font-family:inherit;
+  font-weight: bold;
+}
+
+.ant-menu-dark, .ant-menu-dark .ant-menu-sub {
+  color: rgba(0, 0, 0, 0.65) !important;
+  background: #f4f5f7 !important;
+  font-weight: bold;
+}
+
+.ant-layout {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  background: #f0f2f5;
+  height: 100vh;
+}
+
+.ant-layout-footer {
+  background:#324258 !important;
+  padding: 24px 50px;
+  color: rgba(252, 252, 252, 0.65) !important;
+  font-size: 14px;
+  height:30vh;
+}
+
+.logoApp {
+  height: 30px;
+  margin-top: -30px;
+}
+
+.ant-input-affix-wrapper{
+  margin-top: 30px !important;
+}
+
+.ant-row{
+margin-top: 30px;
+}
+
+.ant-avatar-image{
+  top:-5px;
+  right:-15px;
+}
+
+.submenu-title-wrapper{
+  font-size: 13px !important;
+}
