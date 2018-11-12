@@ -37,16 +37,19 @@ class HomePage extends React.Component {
         return (
             <div>
                 <Layout className="layout">
-                    <Header>
+                    <Header className="container">
                         <div className="logo"
-                        ><img src={logo} className='logoApp' alt='logoImage' /></div>
+                        >
+                            <a href='https://talent.hubstaff.com/' target="">
+                                <img src={logo} className='logoApp' alt='hubbStaff_logoImage' />
+                            </a> </div>
                         <Menu
                             theme="dark"
                             mode="horizontal"
                             defaultSelectedKeys={['2']}
                             style={{ lineHeight: '64px', float: 'right' }}
                         >
-                            <Menu.Item key="1">HOW IT WORKS</Menu.Item>
+                            <Menu.Item key="1"><a className="ant-menu-dark.ant-menu-horizontal ant-menu-item ant-menu-dark.ant-menu-horizontal ant-menu-submenu" href="https://talent.hubstaff.com/how_it_works" target="" rel="noopener noreferrer">HOW IT WORKS</a></Menu.Item>
                             <SubMenu title={<span className="submenu-title-wrapper">BROWSE<Icon type="down" /></span>} trigger={['click']}>
                                 <MenuItemGroup title="Item 1">
                                     <Menu.Item key="setting:1">Option 1</Menu.Item>
@@ -74,6 +77,7 @@ class HomePage extends React.Component {
                             enterButton="Search"
                             size="large"
                             onSearch={value => console.log(value)}
+                            className="searchBar"
                         />
                         <Row>
                             <Col span={6}><div>Data to be populated soon.</div>
