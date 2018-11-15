@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Select, Tag } from 'antd';
+import { Col, Select } from 'antd';
 import ResultDataComponent from '../components/ResultDataComponent';
 
 class SearchResultsComponent extends React.Component {

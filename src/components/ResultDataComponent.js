@@ -15,7 +15,7 @@ class ResultDataComponent extends React.Component {
                 <Tag color="#56d48f">hourly</Tag>
                 <div className="content-pay-rate">$44/hr</div>
                 <div className="job-company">
-                    <a className="is-inline-block job-agency margin-right-20" rel="nofollow" target="_blank" href="http://tutortroops.com"><i class="hi hi-agency" title="Client"></i> Tutor Tropps</a>
+                    <a className="is-inline-block job-agency margin-right-20" target="" href="http://tutortroops.com"><i class="hi hi-agency" title="Client"></i> Tutor Tropps</a>
                     <span className="location text-success margin-right-20">
                         <i class="hi hi-pin" title="From"></i>
                         Indianopolis,IN
