@@ -2,14 +2,14 @@ import React from 'react';
 import { Layout } from 'antd';
 import HeaderComponent from '../components/HeaderComponent';
 import ContentSection from '../components/ContentSection';
+import FooterComponent from '../components/FooterComponent';
 
 class HomePage extends React.Component {
 
     constructor(props, context) {
         super(props, context);
         this.state = {
-            minValue: 1,
-            maxValue: 100
+
         };
     }
 
@@ -24,6 +24,7 @@ class HomePage extends React.Component {
                 <Layout className="layout">
                     <HeaderComponent />
                     <ContentSection />
+                    <FooterComponent />
                 </Layout>
             </div>
         );
