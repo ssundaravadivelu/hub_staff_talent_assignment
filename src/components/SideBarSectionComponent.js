@@ -14,22 +14,21 @@ class SideBarSectionComponent extends React.Component {
         const menu = (
             <Menu>
                 <Menu.Item key="0">
-                    <a href="http://www.alipay.com/">1st menu item</a>
+                    <a href="/">Full Time</a>
                 </Menu.Item>
                 <Menu.Item key="1">
-                    <a href="http://www.taobao.com/">2nd menu item</a>
+                    <a href="/">Part Time</a>
                 </Menu.Item>
-                <Menu.Divider />
-                <Menu.Item key="3">3rd menu item</Menu.Item>
+                <Menu.Item key="3">Hourly</Menu.Item>
             </Menu>
         );
 
         const Option = Select.Option;
 
         const children = [];
-        for (let i = 10; i < 36; i++) {
-            children.push(<Option key={i.toString(36) + i}>{i.toString(36) + i}</Option>);
-        }
+        ['npm','react','webpack','html','js.css','java','spring','kafka','hadoop','spark','scala','oracle','mysql','nginx'].map((skill) => {
+            children.push(<Option key={skill}>{skill}</Option>);
+        });
         return (
             <div>
                 <div className="filters-sidebar">
@@ -45,7 +44,7 @@ class SideBarSectionComponent extends React.Component {
                                     mode="multiple"
                                     size={"large"}
                                     placeholder="Please select"
-                                    defaultValue={['a10', 'c12']}
+                                    defaultValue={[]}
                                     style={{ width: '100%' }}>
                                     {children}
                                 </Select>
@@ -123,7 +122,7 @@ class SideBarSectionComponent extends React.Component {
                                     mode="multiple"
                                     size={"large"}
                                     placeholder="Enter state,province or country"
-                                    defaultValue={['a10', 'c12']}
+                                    defaultValue={[]}
                                     style={{ width: '100%' }}>
                                     {children}
                                 </Select>
@@ -136,7 +135,7 @@ class SideBarSectionComponent extends React.Component {
                                 <Select
                                     mode="multiple"
                                     size={"large"}
-                                    defaultValue={['a10', 'c12']}
+                                    defaultValue={[]}
                                     style={{ width: '100%' }}>
                                     {children}
                                 </Select>

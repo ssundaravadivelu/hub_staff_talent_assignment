@@ -17,7 +17,7 @@ class SearchResultsComponent extends React.Component {
                     <div className="content-section">
                         <div className="row margin-bottom-30">
                             <div className="col-sm-12">
-                                <h5 className="section-subtitle no-margin pull-left">Results(24)</h5>
+                                <h5 className="section-subtitle no-margin pull-left">Results(9)</h5>
                                 <div className="sort_by">
                                     <label className="sort_by label">Sort by</label>
                                     <div className="custom-select-wrapper sort-results-select">
@@ -32,15 +32,9 @@ class SearchResultsComponent extends React.Component {
                             </div>
                         </div>
                         <div className="search-result">
-                            <ResultDataComponent />
-                            <ResultDataComponent />
-                            <ResultDataComponent />
-                            <ResultDataComponent />
-                            <ResultDataComponent />
-                            <ResultDataComponent />
-                            <ResultDataComponent />
-                            <ResultDataComponent />
-                            <ResultDataComponent />
+                        {
+                            this.props.searchResult.map((item) =><ResultDataComponent data={item} />)
+                        }
                         </div>
                     </div>
                 </Col>

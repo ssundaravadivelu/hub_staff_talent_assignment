@@ -18,7 +18,6 @@ class HomePage extends React.Component {
     }
 
     render() {
-        const pageTitle = "Home Page";
         return (
             <div>
                 <Layout className="layout">
